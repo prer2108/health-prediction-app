@@ -1,3 +1,6 @@
+
+import "./App.css";
+
 import {
   BrowserRouter,
   Routes,
@@ -7,11 +10,10 @@ import {
 import Login from "./login";
 import Dashboard from "./Dashboard";
 
-function login() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route
           path="/"
           element={<Login />}
@@ -21,10 +23,9 @@ function login() {
           path="/dashboard"
           element={<Dashboard />}
         />
-
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default login;
+export default App;
